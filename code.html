@@ -1,0 +1,225 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>US Mortgage Pro - Lead Capture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1a1c1e",
+                        "secondary-fixed": "#ffdad8",
+                        "tertiary": "#151818",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#43474f",
+                        "on-secondary-fixed-variant": "#92001d",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#001b3e",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeeef0",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e2e2e5",
+                        "on-primary-container": "#7594cb",
+                        "on-primary-fixed-variant": "#264779",
+                        "on-secondary-fixed": "#410007",
+                        "surface-dim": "#dadadc",
+                        "primary-fixed-dim": "#aac7ff",
+                        "surface-bright": "#f9f9fc",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#fffbff",
+                        "on-tertiary-container": "#929393",
+                        "primary-container": "#002b5c",
+                        "surface-tint": "#3f5f92",
+                        "outline": "#747780",
+                        "inverse-surface": "#2f3133",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#d6e3ff",
+                        "secondary-container": "#e51a38",
+                        "secondary": "#bb0027",
+                        "inverse-on-surface": "#f0f0f3",
+                        "background": "#f9f9fc",
+                        "surface-container-highest": "#e2e2e5",
+                        "outline-variant": "#c4c6d0",
+                        "tertiary-container": "#2a2c2c",
+                        "inverse-primary": "#aac7ff",
+                        "surface-container-low": "#f3f3f6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#1a1c1e",
+                        "surface": "#f9f9fc",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-container-high": "#e8e8ea",
+                        "primary": "#001736",
+                        "secondary-fixed-dim": "#ffb3b1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "container-max": "1280px",
+                        "stack-lg": "32px",
+                        "gutter": "24px",
+                        "section-padding": "64px",
+                        "margin": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "label-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white border-b border-slate-200 flex justify-between items-center px-4 h-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-blue-900" data-icon="menu">menu</span>
+<h1 class="text-lg font-black tracking-widest text-blue-900 uppercase">Across America Mortgage</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-900" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<main class="flex-grow pt-16 pb-20">
+<!-- Hero Section -->
+<section class="relative h-[320px] flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A high-end, contemporary American luxury home with large glass windows and manicured lawns, set against a clear blue sky. The lighting is bright and architectural, emphasizing the reliability and authority of the brand. The color palette features deep navy and white tones, creating a professional and trustworthy atmosphere for financial services. The overall mood is aspirational and modern, reflecting the dream of US property ownership." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdTkzwFpQkLeZGllBwrHiSsFVax8XRA6mZ9LYLAJsmy6ObuG7hw7rg-lICkjphukO4XZKkdB6zW-gLS-3CvAIlklBuy8HN6uhm0NTpynwl-aNhoVjQ5k5J8WnLGz-GHQMew5PmwHlJUAvkRbHuUJL1eVfjGVmXQHQkLMO-SFbGDmwhJbRUcm9fn4wWGFkBRg5EtxSGAqUPJLevaE19a7090Z_4U59uxNzpGdlm2dcc9NrXB4xjzq8qgWTPGGggkMViS_TWVh0R1KE">
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+</div>
+<div class="relative z-10 p-gutter w-full">
+<h2 class="font-headline-lg text-headline-lg text-white mb-stack-sm">OWN YOUR DREAM HOME IN THE USA</h2>
+<p class="font-body-md text-body-md text-white/90">Fast. Simple. Reliable financing for Canadians.</p>
+</div>
+</section>
+<!-- Form Section -->
+<section class="p-gutter -mt-8 relative z-20">
+<div class="bg-white rounded-lg shadow-sm border border-outline-variant p-stack-lg">
+<div class="flex items-center gap-stack-sm mb-stack-lg">
+<div class="w-1 h-8 bg-secondary rounded-full"></div>
+<h3 class="font-headline-md text-headline-md text-primary">Pre-Approval Request</h3>
+</div>
+<form class="space-y-stack-md" action="/api/submit-form" method="POST">
+<!-- Full Name -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-stack-sm">Full Name</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="person">person</span>
+<input class="w-full pl-10 pr-4 py-3 border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-lg font-body-md outline-none transition-all" placeholder="John Doe" type="text">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<!-- Property Price -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-stack-sm">Property Price (USD)</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant font-bold">$</span>
+<input class="w-full pl-10 pr-4 py-3 border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-lg font-body-md outline-none transition-all" placeholder="500,000" type="number">
+</div>
+</div>
+<!-- Target State -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-stack-sm">Target US State</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="map">map</span>
+<select class="w-full pl-10 pr-4 py-3 border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-lg font-body-md outline-none bg-white appearance-none transition-all">
+<option value="">Select State</option>
+<option value="FL">Florida</option>
+<option value="AZ">Arizona</option>
+<option value="CA">California</option>
+<option value="TX">Texas</option>
+<option value="NY">New York</option>
+</select>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Contact Info Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<!-- Phone -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-stack-sm">Contact Number</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="call">call</span>
+<input class="w-full pl-10 pr-4 py-3 border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-lg font-body-md outline-none transition-all" placeholder="+1 (555) 000-0000" type="tel">
+</div>
+</div>
+<!-- Email -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-stack-sm">Email Address</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="mail">mail</span>
+<input class="w-full pl-10 pr-4 py-3 border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-lg font-body-md outline-none transition-all" placeholder="email@example.com" type="email">
+</div>
+</div>
+</div>
+<!-- Country -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-stack-sm">Country of Residence</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="public">public</span>
+<select class="w-full pl-10 pr-4 py-3 border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-lg font-body-md outline-none bg-white appearance-none transition-all">
+<option value="CA">Canada</option>
+<option value="US">United States</option>
+<option value="UK">United Kingdom</option>
+</select>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- CTA -->
+<button class="w-full mt-stack-lg bg-secondary text-white font-label-lg uppercase tracking-widest py-4 rounded-lg hover:bg-on-secondary-fixed-variant transition-all flex justify-center items-center gap-2" type="submit">
+                        Get Approved Today!
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant mt-stack-md">
+<span class="material-symbols-outlined text-sm align-middle" data-icon="lock" style="font-size: 14px;">lock</span>
+                        Your data is secured with institutional-grade encryption.
+                    </p>
+</form>
+</div>
+
+</section>
+</main>
+
+
+
+</body></html>

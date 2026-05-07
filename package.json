@@ -1,0 +1,12 @@
+{
+  "name": "foreign-form",
+  "version": "1.0.0",
+  "description": "Lead capture form for Across America Mortgage",
+  "main": "index.html",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  }
+}
